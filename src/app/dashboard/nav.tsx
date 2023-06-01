@@ -31,8 +31,8 @@ const items: MenuProps['items'] = [
   getItem('Account Pages', 'sub1', '', [
     getItem('Profile', '4', <UserOutlined />),
     getItem('Setting', '5', <SettingOutlined />),
-    getItem('Log Out','6', <LogoutOutlined />),
   ]),
+  getItem('Log Out','6', <LogoutOutlined />),
 
 ];
 
@@ -44,7 +44,7 @@ const MenuLayout: React.FC = () => {
   return (
     <Menu
       onClick={onClick}
-      style={{ width: 256, height:'44.6rem', background: '#1E7589', color:'#ffffff', fontWeight:'600' }}
+      style={{ width: 256, height:'100%', marginTop:'62px', position:'fixed', zIndex:'10', background: '#1E7589', color:'#ffffff', fontWeight:'600' }}
       defaultSelectedKeys={['1']}
       defaultOpenKeys={['sub1']}
       mode="inline"

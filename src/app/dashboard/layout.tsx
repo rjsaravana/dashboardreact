@@ -36,7 +36,7 @@ const siderStyle: React.CSSProperties = {
 const Headerlayout: React.FC = () => {
   return (
     <Space direction="vertical" style={{ width: "100%" }} size={[0, 48]}>
-      <Layout>
+      <Layout style={{display:'flex', width:'100%', position:'fixed',zIndex:10}}>
         <Header style={headerStyle}>
           Dasxp
           <CaretLeftOutlined style={{ color: "#E6C60D" }} />
