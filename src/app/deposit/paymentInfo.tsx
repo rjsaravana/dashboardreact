@@ -36,57 +36,54 @@ const PaymentInfo: React.FC = () => {
       </Col>
 
       <Col span={6}>
-      <Card bordered={false} hoverable>
-        <div className="card-flex">
-          <h2>
-            $857.00<br></br>
-            <span style={{ fontSize: "15px", fontWeight: "400" }}>
-              Total Balance
-            </span>
-          </h2>
-          {/* <DollarOutlined style={{ fontSize: "40px", color:'1E7589' }} /> */}
-          <img
-            style={{
-              width: "60px",
-              height: "60px",
-              marginLeft: "50px",
-              marginTop: "20px",
-            }}
-            src="./assets/icon/Frame339.png"
-          />
-        </div>
-        <div className="card-update-text">
-          <p>Update hour ago</p>
-          <ArrowRightOutlined />
-        </div>
-      </Card>
-
+        <Card bordered={false} hoverable>
+          <div className="card-flex">
+            <h2>
+              Salary<br></br>
+              <span style={{ fontSize: "15px", fontWeight: "400" }}>
+                $3399.00
+              </span>
+            </h2>
+            {/* <DollarOutlined style={{ fontSize: "40px", color:'1E7589' }} /> */}
+            <img
+              style={{
+                width: "60px",
+                height: "60px",
+                marginLeft: "50px",
+                marginTop: "20px",
+              }}
+              src="./assets/icon/Frame339.png"
+            />
+          </div>
+          <div className="card-update-text">
+            <p>Belong Interactive</p>
+          </div>
+        </Card>
       </Col>
       <Col span={6}>
-      <Card bordered={false} hoverable>
-        <div className="card-flex">
-          <h2>
-            $857.00<br></br>
-            <span style={{ fontSize: "15px", fontWeight: "400" }}>
-            Total Balance
-            </span>
-          </h2>
-          {/* <DollarOutlined style={{ fontSize: "40px", color:'1E7589' }} /> */}
-          <img
-            style={{
-              width: "60px",
-              height: "60px",
-              marginLeft: "50px",
-              marginTop: "20px",
-            }}
-            src="./assets/icon/Frame339.png"
-          />
-        </div>
-        <div className="card-update-text">
-          <p>Update hour ago</p>
-          <ArrowRightOutlined />
-        </div>
-      </Card>
+        <Card bordered={false} hoverable>
+          <div className="card-flex">
+            <h2>
+              Paypal<br></br>
+              <span style={{ fontSize: "15px", fontWeight: "400" }}>
+                $890.00
+              </span>
+            </h2>
+            {/* <DollarOutlined style={{ fontSize: "40px", color:'1E7589' }} /> */}
+            <img
+              style={{
+                width: "60px",
+                height: "60px",
+                marginLeft: "50px",
+                marginTop: "20px",
+              }}
+              src="./assets/icon/Frame339.png"
+            />
+          </div>
+          <div className="card-update-text">
+            <p>Freelance Payment</p>
+          </div>
+        </Card>
       </Col>
     </Row>
   );
