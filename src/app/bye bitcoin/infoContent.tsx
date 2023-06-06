@@ -1,5 +1,5 @@
 import React from "react";
-import { Space, Table,Button, Tag } from "antd";
+import { Space, Table,Button,Image, Tag } from "antd";
 import type { ColumnsType } from "antd/es/table";
 import { Progress } from "antd";
 
@@ -22,7 +22,7 @@ const ByebitcoinInfo: React.FC = () => (
 
 <div>
   <h2>Bye Bitcoin</h2>
-</div>;
+</div>
 const columns: ColumnsType<DataType> = [
   {
     title: "Bitcoin",
@@ -53,60 +53,60 @@ const columns: ColumnsType<DataType> = [
 
 const data: DataType[] = [
   {
-    bitcoin: "Misubishi",
+    bitcoin:<><Image src="./assets/icon/mitsubishi.png" width={30} /><span style={{marginLeft:'12px'}}>Misubishi</span></>,
     budget: "$32,524",
     status: "Working",
-    completion: <Progress style={{ width: "100px" }} percent={65} />,
+    completion: <Progress style={{ width: "100px" }} percent={65} />,  
     btn:<Button style={{fontWeight:'600'}}>Buy Now</Button>,
   },
   {
-    bitcoin: "Amazon",
+    bitcoin:<><Image src="./assets/icon/amazon.png" width={30} /><span style={{marginLeft:'12px'}}>Amazon</span></>,
     budget: "$32,524",
     status: "Done",
     completion: <Progress style={{ width: "100px" }} percent={80} />,
     btn:<Button style={{fontWeight:'600'}}>Buy Now</Button>,
   },
   {
-    bitcoin: "Windows",
+    bitcoin:<><Image src="./assets/icon/windows.png" width={30} /><span style={{marginLeft:'12px'}}>Windows</span></>,
     budget: "$32,524",
     status: "Canceled",
     completion: <Progress style={{ width: "100px" }} percent={20} />,
     btn:<Button style={{fontWeight:'600'}}>Buy Now</Button>,
   },
   {
-    bitcoin: "Salesforce",
+    bitcoin:<><Image src="./assets/icon/salesforce.png" width={30} /><span style={{marginLeft:'12px'}}>Salesforce</span></>,
     budget: "$32,524",
     status: "Done",
     completion: <Progress style={{ width: "100px" }} percent={75} />,
     btn:<Button style={{fontWeight:'600'}}>Buy Now</Button>,
   },
   {
-    bitcoin: "Amazon",
+    bitcoin:<><Image src="./assets/icon/amazon.png" width={30} /><span style={{marginLeft:'12px'}}>Amazon</span></>,
     budget: "$32,524",
     status: "Canceled",
     completion: <Progress style={{ width: "100px" }} percent={68} />,
     btn:<Button style={{fontWeight:'600'}}>Buy Now</Button>,
   },
   {
-    bitcoin: "Windows",
+    bitcoin:<><Image src="./assets/icon/windows.png" width={30} /><span style={{marginLeft:'12px'}}>Windows</span></>,
     budget: "$32,524",
     status: "Done",
     completion: <Progress style={{ width: "100px" }} percent={92} />,
     btn:<Button style={{fontWeight:'600'}}>Buy Now</Button>,
   },
   {
-    bitcoin: "Salesforce",
+    bitcoin:<><Image src="./assets/icon/salesforce.png" width={30} /><span style={{marginLeft:'12px'}}>Salesforce</span></>,
     budget: "$32,524",
     status: "Canceled",
     completion: <Progress style={{ width: "100px" }} percent={12} />,
     btn:<Button style={{fontWeight:'600'}}>Buy Now</Button>,
   },
   {
-    bitcoin: "Misubishi",
+    bitcoin:<><Image src="./assets/icon/mitsubishi.png" width={30} /><span style={{marginLeft:'12px'}}>Misubishi</span></>,
     budget: "$32,524",
     status: "Working",
     completion: <Progress style={{ width: "100px" }} percent={93} />,
-    btn:<Button style={{fontWeight:'600'}}>Bue Now</Button>,
+    btn:<Button style={{fontWeight:'600'}}>Buy Now</Button>,
   },
 ];
 

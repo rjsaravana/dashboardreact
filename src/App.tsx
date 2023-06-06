@@ -6,9 +6,8 @@ import { BrowserRouter } from "react-router-dom";
 function App() {
   return (
     <ConfigProvider theme={{ hashed: false }}>
-        <BrowserRouter>
-
-      <AppRoutes />
+      <BrowserRouter>
+        <AppRoutes />
       </BrowserRouter>
     </ConfigProvider>
   );

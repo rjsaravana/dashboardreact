@@ -5,7 +5,7 @@ import {
   BellOutlined,
   UserOutlined,
 } from "@ant-design/icons";
-import { Avatar, Divider, Layout, Space } from "antd";
+import { Avatar, Badge, Divider, Layout, Space } from "antd";
 
 const { Header, Footer, Sider, Content } = Layout;
 
@@ -36,7 +36,14 @@ const siderStyle: React.CSSProperties = {
 const Headerlayout: React.FC = () => {
   return (
     <Space direction="vertical" style={{ width: "100%" }} size={[0, 48]}>
-      <Layout style={{display:'flex', width:'100%', position:'fixed',zIndex:10}}>
+      <Layout
+        style={{
+          display: "flex",
+          width: "100%",
+          position: "fixed",
+          zIndex: 10,
+        }}
+      >
         <Header style={headerStyle}>
           Dasxp
           <CaretLeftOutlined style={{ color: "#E6C60D" }} />
@@ -44,7 +51,9 @@ const Headerlayout: React.FC = () => {
           <span style={siderStyle}>Invoice</span>
           <div style={{ float: "right" }}>
             <SearchOutlined />
-            <BellOutlined style={{ marginLeft: "20px", marginRight: "20px" }} />
+              <BellOutlined
+                style={{marginLeft: "20px", marginRight: "20px" }}
+              />
             <Divider
               type="vertical"
               style={{

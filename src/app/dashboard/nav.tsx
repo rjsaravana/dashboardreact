@@ -40,7 +40,7 @@ const items: MenuProps['items'] = [
 const itemsPath:{[key:number]:string} ={
   1:"/dashboard",
   2:"/byte-coin",
-  3:"deposit"
+  3:"/deposit"
 };
 
 export const MenuLayout: React.FC = () => {

@@ -14,7 +14,7 @@ const Cardcontent: React.FC = () => {
             <div className="card-flex">
               <h2>
                 $857.00<br></br>
-                <span style={{ fontSize: "15px", fontWeight: "400" }}>
+                <span style={{ fontSize: "15px", fontWeight: "400" }}>``
                   Total Balance
                 </span>
               </h2>
