@@ -11,10 +11,19 @@
 .app-container{
     margin-left: 18%;
     margin-top: 20px;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .card-center{
     display: flex;
     justify-content: center;
 }
+
+.payment-content{
+    display: flex;
+    /* flex-direction: row; */
+}
+
+/* .byecoincontent>.ant-table-pagination{
+    display: none;
+} */

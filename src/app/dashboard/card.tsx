@@ -1,7 +1,5 @@
 import { Card, Col, Row, Tag } from "antd";
 import {
-  DollarOutlined,
-  CloseCircleOutlined,
   ArrowRightOutlined,
 } from "@ant-design/icons";
 import React from "react";
@@ -113,47 +111,88 @@ const Cardcontent: React.FC = () => {
         </Col>
       </Row>
 
-      <Card
-        hoverable
-        style={{ width: "70%", marginTop: "20px", alignItems: "center" }}
-      >
-        <Row gutter={18}>
-          <Col span={6} className="card-center">
-            <div>
-              <h4>Previouse payout</h4>
-              <h1 style={{ fontSize: "25px" }}>$258,300</h1>
-              <p style={{ color: "#1E7589", fontWeight: "600" }}>
-                View transactions
-              </p>
+      <div>
+        <div className="payment-content">
+          <Card
+            hoverable
+            style={{ width: "70%", marginTop: "20px", alignItems: "center" }}
+          >
+            <Row gutter={18}>
+              <Col span={6} className="card-center">
+                <div>
+                  <h4>Previouse payout</h4>
+                  <h1 style={{ fontSize: "25px" }}>$258,300</h1>
+                  <p style={{ color: "#1E7589", fontWeight: "600" }}>
+                    View transactions
+                  </p>
+                </div>
+              </Col>
+              <Col span={6} className="card-center">
+                <div>
+                  <h4>Mar 29,2023</h4>
+                  <Tag
+                    style={{
+                      fontSize: "14px",
+                      padding: "5px",
+                      color: "#3CAAC3",
+                      background: "#D5FBF8",
+                    }}
+                  >
+                    Paid
+                  </Tag>
+                </div>
+              </Col>
+              <Col span={6} className="card-center">
+                <div>
+                  <h4>Previouse payout</h4>
+                  <h1 style={{ fontSize: "25px" }}>$258,300</h1>
+                  <p style={{ color: "#1E7589", fontWeight: "600" }}>
+                    View transactions
+                  </p>
+                </div>
+              </Col>                  
+              <Col span={6} className="card-center">
+                <div>
+                  <h4>Mar 29,2023</h4>
+                  <Tag
+                    style={{
+                      fontSize: "14px",
+                      padding: "5px",
+                      color: "#E6C60D",
+                      background: "#F9F4D5",
+                    }}
+                  >
+                    Pending
+                  </Tag>
+                </div>
+              </Col>
+            </Row>
+          </Card>
+
+          <Card
+            hoverable
+            style={{ width: "20%", height:"10%" , marginTop: "20px",marginLeft:'20px' }}
+          >
+            <p style={{fontSize:'16px', fontWeight:'600'}}>Wallet</p>
+            <p>Balance</p>
+            <h2>$2,548.00</h2>
+            <p>9687 5784 3358 3451</p>
+            <p>Jerome Bell</p>
+            <div style={{float:'right'}}>
+              <p>07/27</p>
+              <img
+                style={{
+                  width: "70px",
+                  height: "40px",
+                }}
+                src="./assets/icon/cclogo.png"
+              ></img>
             </div>
-          </Col>
-          <Col span={6} className="card-center">
-            <div>
-              <h4>Mar 29,2023</h4>
-              <Tag style={{ fontSize: "14px", padding: "5px", color: "#3CAAC3", background:'#D5FBF8' }}>Paid</Tag>
-            </div>
-          </Col>
-          <Col span={6} className="card-center">
-            <div>
-              <h4>Previouse payout</h4>
-              <h1 style={{ fontSize: "25px" }}>$258,300</h1>
-              <p style={{ color: "#1E7589", fontWeight: "600" }}>
-                View transactions
-              </p>
-            </div>
-          </Col>
-          <Col span={6} className="card-center">
-            <div>
-              <h4>Mar 29,2023</h4>
-              <Tag
-                style={{ fontSize: "14px", padding: "5px", color: "#E6C60D", background:'#F9F4D5' }}
-              >
-                Pending
-              </Tag>
-            </div>
-          </Col>
-        </Row>
-      </Card>
+          </Card>
+        </div>
+      </div>
+
+      
     </>
   );
 };
