@@ -13,7 +13,7 @@ interface DataType {
 
 const ByebitcoinInfo: React.FC = () => (
   <Table
-    style={{ marginTop: "20px" }}
+    style={{ marginTop: "50px" }}
     className="byecoincontent"
     columns={columns}
     dataSource={data}
@@ -57,56 +57,56 @@ const data: DataType[] = [
     budget: "$32,524",
     status: "Working",
     completion: <Progress style={{ width: "100px" }} percent={65} />,
-    btn:<Button style={{fontWeight:'600'}}>Bye Now</Button>,
+    btn:<Button style={{fontWeight:'600'}}>Buy Now</Button>,
   },
   {
     bitcoin: "Amazon",
     budget: "$32,524",
     status: "Done",
     completion: <Progress style={{ width: "100px" }} percent={80} />,
-    btn:<Button style={{fontWeight:'600'}}>Bye Now</Button>,
+    btn:<Button style={{fontWeight:'600'}}>Buy Now</Button>,
   },
   {
     bitcoin: "Windows",
     budget: "$32,524",
     status: "Canceled",
     completion: <Progress style={{ width: "100px" }} percent={20} />,
-    btn:<Button style={{fontWeight:'600'}}>Bye Now</Button>,
+    btn:<Button style={{fontWeight:'600'}}>Buy Now</Button>,
   },
   {
     bitcoin: "Salesforce",
     budget: "$32,524",
     status: "Done",
     completion: <Progress style={{ width: "100px" }} percent={75} />,
-    btn:<Button style={{fontWeight:'600'}}>Bye Now</Button>,
+    btn:<Button style={{fontWeight:'600'}}>Buy Now</Button>,
   },
   {
     bitcoin: "Amazon",
     budget: "$32,524",
     status: "Canceled",
     completion: <Progress style={{ width: "100px" }} percent={68} />,
-    btn:<Button style={{fontWeight:'600'}}>Bye Now</Button>,
+    btn:<Button style={{fontWeight:'600'}}>Buy Now</Button>,
   },
   {
     bitcoin: "Windows",
     budget: "$32,524",
     status: "Done",
     completion: <Progress style={{ width: "100px" }} percent={92} />,
-    btn:<Button style={{fontWeight:'600'}}>Bye Now</Button>,
+    btn:<Button style={{fontWeight:'600'}}>Buy Now</Button>,
   },
   {
     bitcoin: "Salesforce",
     budget: "$32,524",
     status: "Canceled",
     completion: <Progress style={{ width: "100px" }} percent={12} />,
-    btn:<Button style={{fontWeight:'600'}}>Bye Now</Button>,
+    btn:<Button style={{fontWeight:'600'}}>Buy Now</Button>,
   },
   {
     bitcoin: "Misubishi",
     budget: "$32,524",
     status: "Working",
     completion: <Progress style={{ width: "100px" }} percent={93} />,
-    btn:<Button style={{fontWeight:'600'}}>Bye Now</Button>,
+    btn:<Button style={{fontWeight:'600'}}>Bue Now</Button>,
   },
 ];
 

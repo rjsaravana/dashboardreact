@@ -1,12 +1,15 @@
 import { ConfigProvider } from "antd";
 import "./App.css";
-import { AppLayout } from "./app/dashboard/dashboard";
-import { Byeinfo } from "./app/bye bitcoin/bitcoinInfo";
+import { AppRoutes } from "./app/router";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <ConfigProvider theme={{ hashed: false }}>
-      <AppLayout />
+        <BrowserRouter>
+
+      <AppRoutes />
+      </BrowserRouter>
     </ConfigProvider>
   );
 }

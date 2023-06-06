@@ -2,6 +2,7 @@ import React from 'react';
 import { AppstoreOutlined, LineChartOutlined, UserOutlined,LogoutOutlined, CaretLeftOutlined, SettingOutlined,ReconciliationOutlined } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
 import { Menu } from 'antd';
+import { useNavigate } from 'react-router-dom';
 
 type MenuItem = Required<MenuProps>['items'][number];
 
@@ -25,8 +26,8 @@ const items: MenuProps['items'] = [
 
 
   getItem('Dashboard', '1', <AppstoreOutlined />),
-  getItem('Bye bitcoin', '2',<ReconciliationOutlined />),
-  getItem('Deposit', '3', <LineChartOutlined />),
+  getItem('Buy bitcoin', '2',<ReconciliationOutlined />),
+  getItem('Deposit', '3', <LineChartOutlined />), 
   
   getItem('Account Pages', 'sub1', '', [
     getItem('Profile', '4', <UserOutlined />),
@@ -36,9 +37,18 @@ const items: MenuProps['items'] = [
 
 ];
 
-const MenuLayout: React.FC = () => {
+const itemsPath:{[key:number]:string} ={
+  1:"/dashboard",
+  2:"/byte-coin",
+  3:"deposit"
+};
+
+export const MenuLayout: React.FC = () => {
+  const navigation = useNavigate()
+
   const onClick: MenuProps['onClick'] = (e) => {
-    console.log('click ', e);
+    console.log('click ', itemsPath[Number(e?.key) as number]);
+    navigation(itemsPath[Number(e?.key) as number])
   };
 
   return (
@@ -52,5 +62,3 @@ const MenuLayout: React.FC = () => {
     />
   );
 };
-
-export default MenuLayout;
