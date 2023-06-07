@@ -37,3 +37,29 @@
   }
 }
 
+.byecoincontent{
+  height: 5px !important;
+}
+
+.pay-method{
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-btn{
+  cursor: pointer;
+  margin-top: 30px;
+  color: #ffffff;
+  width: 185px;
+  height: 40px;
+  align-items: center;
+  padding: 0px 32px;
+  gap: 12px;
+  background: #186A7E;
+  border-radius: 8px;
+}
+
+.bill-info{
+  display: flex;
+  justify-content: space-around;
+}
