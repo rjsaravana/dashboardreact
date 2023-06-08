@@ -4,12 +4,38 @@ import React from "react";
 
 const Transactions: React.FC = () => {
 return(
-<div>
-    <h3>Your Transaction's</h3>
-    <div>
+<div style={{marginTop:'90px'}}>
+    <h2>Your Transaction's</h2>
+    <div className="pay-method">
         <p>NEWEST</p>
         <p><CalendarOutlined /> 24-31 May 2023</p>
     </div>
+
+    <div className="pay-method" style={{marginTop:'30px'}}>
+        <h3>Invoice Name <br /> <span style={{fontSize:'13px', color:'#186A7E'}}>24/04/2023</span></h3>
+        <p  style={{fontSize:'15px', color:'#186A7E'}}>+$24,200</p>
+    </div>
+
+    <div className="pay-method" style={{marginTop:'30px'}}>
+        <h3>Invoice Name <br /> <span style={{fontSize:'13px', color:'#186A7E'}}>24 Apr 05:32 PM</span></h3>
+        <p  style={{fontSize:'15px', color:'#186A7E'}}>+$33,009</p>
+    </div>
+
+    <div className="pay-method" style={{marginTop:'30px'}}>
+        <h3>Invoice Name <br /> <span style={{fontSize:'13px', color:'#186A7E'}}>25 Apr 09:30 PM</span></h3>
+        <p  style={{fontSize:'15px', color:'#D70000'}}>-$645,60</p>
+    </div>
+
+    <div className="pay-method" style={{marginTop:'30px'}}>
+        <h3>Invoice Name <br /> <span style={{fontSize:'13px', color:'#186A7E'}}>25 Apr 09:30 PM</span></h3>
+        <p  style={{fontSize:'15px', color:'#186A7E'}}>+$33,009</p>
+    </div>
+
+    <div className="pay-method" style={{marginTop:'30px'}}>
+        <h3>Invoice Name <br /> <span style={{fontSize:'13px', color:'#186A7E'}}>25 Apr 09:30 PM</span></h3>
+        <p  style={{fontSize:'15px', color:'#D70000'}}>-$645,60</p>
+    </div>
+
 </div>
 )
 }

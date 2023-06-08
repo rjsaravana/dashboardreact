@@ -1,6 +1,7 @@
 import { Button, Card, Col, Row } from "antd";
 import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
 import React from "react";
+import Transactions from "./transactions";
 
 const BillingInfo: React.FC = () => {
   return (
@@ -14,7 +15,7 @@ const BillingInfo: React.FC = () => {
           </h1>
         </div>
 
-        <div className="bill-info">
+        <div className="bill-info"  style={{marginTop:'30px'}}>
           <div>
             <h4>Leslie Alexander</h4>
             <p>Company Name: General Electric</p>
@@ -27,14 +28,52 @@ const BillingInfo: React.FC = () => {
             </Button>
           </div>
           <div>
-            <Button type="primary" >
+            <Button type="primary" style={{marginTop:'20px'}} >
+              <EditOutlined /> Edit
+            </Button>
+          </div>
+        </div>
+
+        <div className="bill-info"  style={{marginTop:'30px'}}>
+          <div>
+            <h4>Cameron Williamson</h4>
+            <p>Company Name: General Electric</p>
+            <p>Email Address: General@example.com</p>
+            <p>VAT Number: ELFF547854</p>
+          </div>
+          <div>
+            <Button type="primary" style={{marginTop:'20px'}} danger>
+              <DeleteOutlined /> Delete
+            </Button>
+          </div>
+          <div>
+            <Button type="primary" style={{marginTop:'20px'}} >
+              <EditOutlined /> Edit
+            </Button>
+          </div>
+        </div>
+
+        <div className="bill-info"  style={{marginTop:'30px'}}>
+          <div>
+            <h4>Brooklyn Simmons</h4>
+            <p>Company Name: General Electric</p>
+            <p>Email Address: General@example.com</p>
+            <p>VAT Number: ELFF547854</p>
+          </div>
+          <div>
+            <Button type="primary" style={{marginTop:'20px'}} danger>
+              <DeleteOutlined /> Delete
+            </Button>
+          </div>
+          <div>
+            <Button type="primary" style={{marginTop:'20px'}} >
               <EditOutlined /> Edit
             </Button>
           </div>
         </div>
       </Col>
       <Col span={6}>
-        <div></div>
+        <div><Transactions /></div>
       </Col>
     </Row>
   );
