@@ -1,10 +1,10 @@
 import { Layout } from "antd";
 import { Route, Routes } from "react-router-dom";
 import { AppLayout } from "./dashboard/dashboard";
-import Headerlayout from "./dashboard/layout";
 import { MenuLayout } from "./dashboard/nav";
 import { DepLayout } from "./deposit/depLayout";
 import { Buyinfo } from "./buy bitcoin/bitcoinInfo";
+import Headerlayout from "./dashboard/headlayout";
 
 export const AppRoutes:React.FC = ()=>{
     return(

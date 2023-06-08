@@ -54,7 +54,7 @@ export const MenuLayout: React.FC = () => {
   return (
     <Menu
       onClick={onClick}
-      style={{ width: 256, height:'100%', marginTop:'62px', position:'fixed', zIndex:'10', background: '#1E7589', color:'#ffffff', fontWeight:'600' }}
+      style={{ width: 230, height:'100%', marginTop:'62px', position:'fixed', zIndex:'10', background: '#1E7589', color:'#ffffff', fontWeight:'600' }}
       defaultSelectedKeys={['1']}
       defaultOpenKeys={['sub1']}
       mode="inline"

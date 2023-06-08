@@ -97,7 +97,7 @@ const TransHistory: React.FC = () => {
       </div>
 
       <Table
-        style={{ marginTop: "10px",marginLeft:'30px' }}
+        style={{ marginTop: "10px",marginLeft:'30px'}}
         columns={columns}
         pagination={false}
         dataSource={data}

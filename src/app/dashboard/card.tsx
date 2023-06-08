@@ -1,7 +1,5 @@
 import { Card, Col, Row, Tag } from "antd";
-import {
-  ArrowRightOutlined,
-} from "@ant-design/icons";
+import { ArrowRightOutlined } from "@ant-design/icons";
 import React from "react";
 import "./dashboard.css";
 
@@ -131,12 +129,7 @@ const Cardcontent: React.FC = () => {
                 <div>
                   <h4>Mar 29,2023</h4>
                   <Tag
-                    style={{
-                      fontSize: "14px",
-                      padding: "5px",
-                      color: "#3CAAC3",
-                      background: "#D5FBF8",
-                    }}
+                  className="paid-tag"
                   >
                     Paid
                   </Tag>
@@ -150,14 +143,13 @@ const Cardcontent: React.FC = () => {
                     View transactions
                   </p>
                 </div>
-              </Col>                  
+              </Col>
               <Col span={6} className="card-center">
                 <div>
                   <h4>Mar 29,2023</h4>
                   <Tag
+                   className="paid-tag"
                     style={{
-                      fontSize: "14px",
-                      padding: "5px",
                       color: "#E6C60D",
                       background: "#F9F4D5",
                     }}
@@ -171,28 +163,44 @@ const Cardcontent: React.FC = () => {
 
           <Card
             hoverable
-            style={{ width: "20%", height:"10%" , marginTop: "20px",marginLeft:'20px' }}
+            style={{
+              width: "20%",
+              height: "10%",
+              marginTop: "20px",
+              marginLeft: "20px",
+              lineHeight: "0.671429",
+            }}
           >
-            <p style={{fontSize:'16px', fontWeight:'600'}}>Wallet</p>
-            <p>Balance</p>  
+            <h2
+              style={{
+                fontSize: "16px",
+                fontWeight: "700",
+                marginBottom: "20px",
+              }}
+            >
+              Wallet
+            </h2>
+            <p>Balance</p>
             <h2>$2,548.00</h2>
             <p>9687 5784 3358 3451</p>
-            <p>Jerome Bell</p>
-            <div style={{float:'right'}}>
-              <p>07/27</p>
-              <img
-                style={{
-                  width: "70px",
-                  height: "40px",
-                }}
-                src="./assets/icon/cclogo.png"
-              ></img>
+            <div style={{ display: "flex", justifyContent: "space-between" }}>
+              <div>
+                <p>Jerome Bell</p>
+              </div>
+              <div>
+                <p style={{ marginLeft: "20px" }}>07/27</p>
+                <img
+                  style={{
+                    width: "70px",
+                    height: "40px",
+                  }}
+                  src="./assets/icon/cclogo.png"
+                ></img>
+              </div>
             </div>
           </Card>
         </div>
       </div>
-
-      
     </>
   );
 };

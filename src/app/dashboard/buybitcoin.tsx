@@ -1,8 +1,22 @@
 import React from "react";
-import { Space, Table, Image, Tag, Avatar, Tooltip } from "antd";
+import {
+  Space,
+  Table,
+  Image,
+  Tag,
+  Avatar,
+  Tooltip,
+  Col,
+  Row,
+  Button,
+} from "antd";
 import type { ColumnsType } from "antd/es/table";
 import { Progress } from "antd";
-import { UserOutlined, AntDesignOutlined } from "@ant-design/icons";
+import {
+  UserOutlined,
+  AntDesignOutlined,
+  ArrowUpOutlined,
+} from "@ant-design/icons";
 
 interface DataType {
   companis: any;
@@ -138,16 +152,65 @@ const Byebitcoin: React.FC = () => {
 
   return (
     <>
-      <div style={{marginTop:'20px'}}>
+      <div style={{ marginTop: "20px" }}>
         <h2>Buy Bitcoin</h2>
       </div>
-      <Table
-        style={{ marginTop: "10px" }}
-        className="byecoincontent"
-        columns={columns}
-        pagination={false}
-        dataSource={data}
-      />
+
+      <div>
+        <Row>
+          <Col span={18}>
+            <Table
+              style={{ marginTop: "10px" }}
+              className="byecoincontent"
+              columns={columns}
+              pagination={false}
+              dataSource={data}
+            />
+          </Col>
+
+          <Col span={6}>
+            <div>
+              <h3>Order Overview</h3>
+              <p>
+                <ArrowUpOutlined
+                  style={{ color: "#1E7589", marginRight: "10px" }}
+                />
+                64% this month
+              </p>
+            </div>
+
+            <div className="pay-method" style={{ marginTop: "15px" }}>
+              <h3>
+                App Design <br />
+                <span style={{ fontSize: "13px", color: "#186A7E" }}>
+                &bull; 29 Mar 06:45 PM
+                </span>
+              </h3>
+              <Button className="paid-btn" style={{marginTop:'25px', marginRight:'20px'}}>$60 Paid</Button>
+            </div>
+
+            <div className="pay-method" style={{ marginTop: "15px" }}>
+              <h3>
+                Invoice Details <br />
+                <span style={{ fontSize: "13px", color: "#186A7E" }}>
+                &bull; 29 Mar 06:45 PM
+                </span>
+              </h3>
+              <Button className="paid-btn" style={{marginTop:'25px', marginRight:'20px', backgroundColor:'#E6C60D'}}>View More</Button>
+            </div>
+
+            <div className="pay-method" style={{ marginTop: "15px" }}>
+              <h3>
+                New Order <br />
+                <span style={{ fontSize: "13px", color: "#186A7E" }}>
+                &bull; 29 Mar 06:45 PM
+                </span>
+              </h3>
+              <Button className="paid-btn" style={{marginTop:'25px', marginRight:'20px'}}>$60 Paid</Button>
+            </div>
+          </Col>
+        </Row>
+      </div>
     </>
   );
 };

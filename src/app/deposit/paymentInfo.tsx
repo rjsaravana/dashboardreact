@@ -1,6 +1,6 @@
-import { Button, Card, Col, Row } from "antd";
+import { Button, Card, Col, Input, Modal, Row, Select } from "antd";
 import Table, { ColumnsType } from "antd/es/table";
-import React from "react";
+import React, { useState } from "react";
 
 interface DataType {
   invoices: any;
@@ -8,6 +8,20 @@ interface DataType {
 }
 
 const PaymentInfo: React.FC = () => {
+  const [open, setOpen] = useState(false);
+
+  const showModal = () => {
+    setOpen(true);
+  };
+
+  const hideModal = () => {
+    setOpen(false);
+  };
+
+  const handleChange = (value: string) => {
+    console.log(`selected ${value}`);
+  };
+
   const columns: ColumnsType<DataType> = [
     {
       title: "Invoices",
@@ -15,17 +29,13 @@ const PaymentInfo: React.FC = () => {
       key: "invoices",
     },
     {
-      title: <Button>View All</Button>,
+      title: <Button style={{ borderRadius: "15px" }}>View All</Button>,
       dataIndex: "view",
       key: "view",
     },
   ];
 
   const data: DataType[] = [
-    {
-      invoices: "#GT-685458",
-      view: "$220",
-    },
     {
       invoices: "#GT-685458",
       view: "$220",
@@ -80,22 +90,29 @@ const PaymentInfo: React.FC = () => {
                   width: "90%",
                   height: "100%",
                   marginLeft: "20px",
+                  lineHeight: '0.571429'
                 }}
               >
-                <h2 style={{ fontSize: "16px", fontWeight: "700" }}>Wallet</h2>
+                <h2 style={{ fontSize: "16px", fontWeight: "800", marginBottom:'20px' }}>Wallet</h2>
                 <p>Balance</p>
                 <h2>$2,548.00</h2>
                 <p>9687 5784 3358 3451</p>
-                <p>Jerome Bell</p>
-                <div style={{ float: "right" }}>
-                  <p>07/27</p>
-                  <img
-                    style={{
-                      width: "70px",
-                      height: "40px",
-                    }}
-                    src="./assets/icon/cclogo.png"
-                  ></img>
+                <div
+                  style={{ display: "flex", justifyContent: "space-between" }}
+                >
+                  <div>
+                    <p>Jerome Bell</p>
+                  </div>
+                  <div>
+                    <p style={{ marginLeft:'20px'}}>07/27</p>
+                    <img
+                      style={{
+                        width: "70px",
+                        height: "40px",
+                      }}
+                      src="./assets/icon/cclogo.png"
+                    ></img>
+                  </div>
                 </div>
               </Card>
             </div>
@@ -163,17 +180,56 @@ const PaymentInfo: React.FC = () => {
             </Card>
           </Col>
         </Row>
-        
-        <div className="pay-method">
-            <div>
-              <h1 style={{fontSize:'25px', fontWeight:'700', marginLeft:'30px'}}>Payment Method</h1>
-            </div>
-            <div>
-              <button className="add-btn">+ ADD NEW CARD</button>
-            </div>
-          </div>
 
-        <Row style={{marginLeft:'25px'}}>
+        <div className="pay-method">
+          <div>
+            <h1
+              style={{
+                fontSize: "25px",
+                fontWeight: "700",
+                marginLeft: "30px",
+              }}
+            >
+              Payment Method
+            </h1>
+          </div>
+          <div>
+            <button className="add-btn" onClick={showModal}>
+              + ADD NEW CARD
+            </button>
+
+            <Modal
+              title="Add New Card"
+              open={open}
+              onOk={hideModal}
+              onCancel={hideModal}
+              okText="OK"
+              cancelText="Cancel"
+            >
+              <label>Select a Card</label>
+              <br />
+              <Select
+                defaultValue="Master Card"
+                style={{ width: 120, marginTop: "10px" }}
+                onChange={handleChange}
+                options={[
+                  { value: "Master Card", label: "Master Card" },
+                  { value: "Visa", label: "Visa" },
+                  { value: "Rupay", label: "Rupay" },
+                ]}
+              />{" "}
+              <br />
+              <br />
+              <label>Enter a Card Number</label>
+              <Input
+                placeholder="Card Number"
+                style={{ marginTop: "10px", marginBottom: "20px" }}
+              />
+            </Modal>
+          </div>
+        </div>
+
+        <Row style={{ marginLeft: "25px" }}>
           <Col span={8}>
             <Card
               bordered={false}
