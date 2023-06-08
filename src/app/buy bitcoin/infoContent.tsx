@@ -51,7 +51,7 @@ const ByebitcoinInfo: React.FC = () => {
       budget: "$32,524",
       status: "Working",
       completion: <Progress style={{ width: "100px" }} percent={65} />,
-      btn: <Button style={{ fontWeight: "600" }}>Buy Now</Button>,
+      btn: <Button style={{ fontWeight: "600", borderRadius:'15px' }}>Buy Now</Button>,
     },
     {
       bitcoin: (
@@ -63,7 +63,7 @@ const ByebitcoinInfo: React.FC = () => {
       budget: "$32,524",
       status: "Done",
       completion: <Progress style={{ width: "100px" }} percent={80} />,
-      btn: <Button style={{ fontWeight: "600" }}>Buy Now</Button>,
+      btn: <Button style={{ fontWeight: "600", borderRadius:'15px' }}>Buy Now</Button>,
     },
     {
       bitcoin: (
@@ -75,7 +75,7 @@ const ByebitcoinInfo: React.FC = () => {
       budget: "$32,524",
       status: "Canceled",
       completion: <Progress style={{ width: "100px" }} percent={20} />,
-      btn: <Button style={{ fontWeight: "600" }}>Buy Now</Button>,
+      btn: <Button style={{ fontWeight: "600", borderRadius:'15px' }}>Buy Now</Button>,
     },
     {
       bitcoin: (
@@ -87,7 +87,7 @@ const ByebitcoinInfo: React.FC = () => {
       budget: "$32,524",
       status: "Done",
       completion: <Progress style={{ width: "100px" }} percent={75} />,
-      btn: <Button style={{ fontWeight: "600" }}>Buy Now</Button>,
+      btn: <Button style={{ fontWeight: "600", borderRadius:'15px' }}>Buy Now</Button>,
     },
     {
       bitcoin: (
@@ -99,7 +99,7 @@ const ByebitcoinInfo: React.FC = () => {
       budget: "$32,524",
       status: "Canceled",
       completion: <Progress style={{ width: "100px" }} percent={68} />,
-      btn: <Button style={{ fontWeight: "600" }}>Buy Now</Button>,
+      btn: <Button style={{ fontWeight: "600", borderRadius:'15px' }}>Buy Now</Button>,
     },
     {
       bitcoin: (
@@ -111,7 +111,7 @@ const ByebitcoinInfo: React.FC = () => {
       budget: "$32,524",
       status: "Done",
       completion: <Progress style={{ width: "100px" }} percent={92} />,
-      btn: <Button style={{ fontWeight: "600" }}>Buy Now</Button>,
+      btn: <Button style={{ fontWeight: "600", borderRadius:'15px' }}>Buy Now</Button>,
     },
     {
       bitcoin: (
@@ -123,7 +123,7 @@ const ByebitcoinInfo: React.FC = () => {
       budget: "$32,524",
       status: "Canceled",
       completion: <Progress style={{ width: "100px" }} percent={12} />,
-      btn: <Button style={{ fontWeight: "600" }}>Buy Now</Button>,
+      btn: <Button style={{ fontWeight: "600", borderRadius:'15px' }}>Buy Now</Button>,
     },
     {
       bitcoin: (
@@ -135,7 +135,19 @@ const ByebitcoinInfo: React.FC = () => {
       budget: "$32,524",
       status: "Working",
       completion: <Progress style={{ width: "100px" }} percent={93} />,
-      btn: <Button style={{ fontWeight: "600" }}>Buy Now</Button>,
+      btn: <Button style={{ fontWeight: "600", borderRadius:'15px' }}>Buy Now</Button>,
+    },
+    {
+      bitcoin: (
+        <>
+          <Image src="./assets/icon/amazon.png" width={30} />
+          <span style={{ marginLeft: "12px" }}>Amazon</span>
+        </>
+      ),
+      budget: "$32,524",
+      status: "Canceled",
+      completion: <Progress style={{ width: "100px" }} percent={46} />,
+      btn: <Button style={{ fontWeight: "600", borderRadius:'15px' }}>Buy Now</Button>,
     },
   ];
 

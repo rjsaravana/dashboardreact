@@ -63,3 +63,39 @@
   display: flex;
   justify-content: space-around;
 }
+
+
+.view-btn{
+  color:#007D50 ;
+  background-color: #d1f8e1 ;
+  width: 128px;
+  height: 33px;
+  border-radius: 15px;
+}
+
+.del-btn{
+  color: #D70000;
+  background-color: #f8d6d6;
+  border-radius: 15px;
+  width: 89px;
+  height: 33px;
+}
+
+.edit-btn{
+  color: #474747;
+  background-color: #cecccc;
+  border-radius: 15px;
+  width: 78px;
+  height: 33px;
+}
+
+.del-btn:hover{
+  color: #D70000 !important;
+  background-color: #f8d6d6 !important;
+}
+
+.edit-btn:hover{
+  color: #474747 !important;
+  background-color: #cecccc !important;
+}
+

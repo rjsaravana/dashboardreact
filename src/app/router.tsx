@@ -1,10 +1,10 @@
 import { Layout } from "antd";
 import { Route, Routes } from "react-router-dom";
-import { Byeinfo } from "./bye bitcoin/bitcoinInfo";
 import { AppLayout } from "./dashboard/dashboard";
 import Headerlayout from "./dashboard/layout";
 import { MenuLayout } from "./dashboard/nav";
 import { DepLayout } from "./deposit/depLayout";
+import { Buyinfo } from "./buy bitcoin/bitcoinInfo";
 
 export const AppRoutes:React.FC = ()=>{
     return(
@@ -16,7 +16,7 @@ export const AppRoutes:React.FC = ()=>{
             <Routes>
                 <Route path="/" element={<AppLayout />} />
                 <Route path="/dashboard" element={<AppLayout />} />
-                <Route path="/byte-coin" element={<Byeinfo />} />
+                <Route path="/byte-coin" element={<Buyinfo />} />
                 <Route path="/deposit" element={<DepLayout />} />
             </Routes>
         </Layout>

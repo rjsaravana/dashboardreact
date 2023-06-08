@@ -1,5 +1,5 @@
 import ByebitcoinInfo from "./infoContent";
 
-export const Byeinfo: React.FC = () => {
+export const Buyinfo: React.FC = () => {
   return <ByebitcoinInfo />;
 };
