@@ -1,6 +1,6 @@
-import { Avatar, Button, Image, Progress } from "antd";
+import { Avatar, Button, Empty, Image, Modal, Progress } from "antd";
 import Table, { ColumnsType } from "antd/es/table";
-import React from "react";
+import React, { useState } from "react";
 
 interface DataType {
   name: any;
@@ -11,6 +11,11 @@ interface DataType {
 }
 
 const TransHistory: React.FC = () => {
+
+
+  const [modal1Open, setModal1Open] = useState(false);
+
+
   const columns: ColumnsType<DataType> = [
     {
       title: "",
@@ -50,7 +55,15 @@ const TransHistory: React.FC = () => {
       date: "24 Apr 2023",
       price: "$325.00",
       order: "Order Shipped",
-      button: <Button className="view-btn"  style={{ fontWeight: "600" }}>View Details</Button>,
+      button: <><Button onClick={() => setModal1Open(true)} className="view-btn" style={{ fontWeight: "600" }}>View Details</Button><Modal
+        title=""
+        centered
+        open={modal1Open}
+        onOk={() => setModal1Open(false)}
+        onCancel={() => setModal1Open(false)}
+      >
+        <Empty />
+      </Modal></>,
     },
     {
       name: (
@@ -62,7 +75,15 @@ const TransHistory: React.FC = () => {
       date: "24 Apr 2023",
       price: "$325.00",
       order: "Order Shipped",
-      button: <Button className="view-btn" style={{ fontWeight: "600" }}>View Details</Button>,
+      button: <><Button onClick={() => setModal1Open(true)} className="view-btn" style={{ fontWeight: "600" }}>View Details</Button><Modal
+      title=""
+      centered
+      open={modal1Open}
+      onOk={() => setModal1Open(false)}
+      onCancel={() => setModal1Open(false)}
+    >
+      <Empty />
+    </Modal></>,
     },
     {
       name: (
@@ -74,7 +95,15 @@ const TransHistory: React.FC = () => {
       date: "24 Apr 2023",
       price: "$325.00",
       order: "Order Shipped",
-      button: <Button className="view-btn" style={{ fontWeight: "600" }}>View Details</Button>,
+      button: <><Button onClick={() => setModal1Open(true)} className="view-btn" style={{ fontWeight: "600" }}>View Details</Button><Modal
+        title=""
+        centered
+        open={modal1Open}
+        onOk={() => setModal1Open(false)}
+        onCancel={() => setModal1Open(false)}
+      >
+        <Empty />
+      </Modal></>,
     },
     {
       name: (
@@ -86,7 +115,15 @@ const TransHistory: React.FC = () => {
       date: "24 Apr 2023",
       price: "$325.00",
       order: "Order Shipped",
-      button: <Button className="view-btn" style={{ fontWeight: "600" }}>View Details</Button>,
+      button: <><Button onClick={() => setModal1Open(true)} className="view-btn" style={{ fontWeight: "600" }}>View Details</Button><Modal
+        title=""
+        centered
+        open={modal1Open}
+        onOk={() => setModal1Open(false)}
+        onCancel={() => setModal1Open(false)}
+      >
+        <Empty />
+      </Modal></>,
     },
   ];
 
