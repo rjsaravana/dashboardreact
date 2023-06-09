@@ -12,6 +12,7 @@ function getItem(
   icon?: React.ReactNode,
   children?: MenuItem[],
   type?: 'group',
+  className?:string,
 ): MenuItem {
   return {
     key,
@@ -19,6 +20,7 @@ function getItem(
     children,
     label,
     type,
+    className,
   } as MenuItem;
 }
 
@@ -33,7 +35,7 @@ const items: MenuProps['items'] = [
     getItem('Profile', '4', <UserOutlined />),
     getItem('Setting', '5', <SettingOutlined />),
   ]),
-  getItem('Log Out','6', <LogoutOutlined />),
+  getItem('Log Out','6', <LogoutOutlined />,undefined, undefined, 'menu-logout'),
 
 ];
 
