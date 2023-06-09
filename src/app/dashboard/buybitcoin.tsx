@@ -132,7 +132,7 @@ const Byebitcoin: React.FC = () => {
       ),
       member: (
         <Avatar.Group>
-          <Avatar src="https://xsgames.co/randomusers/avatar.php?g=pixel&key=1" />
+          <Avatar src="https://xsgames.co/randomusers/avatar.php?g=pixel&key=3" />
           <Tooltip title="Ant User" placement="top">
             <Avatar
               style={{ backgroundColor: "#87d068" }}

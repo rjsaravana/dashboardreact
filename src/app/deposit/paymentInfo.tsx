@@ -29,17 +29,13 @@ const PaymentInfo: React.FC = () => {
       key: "invoices",
     },
     {
-      title: <Button style={{ borderRadius: "15px" }}>View All</Button>,
+      title: <Button style={{ borderRadius: "15px"}}>View All</Button>,
       dataIndex: "view",
       key: "view",
     },
   ];
 
   const data: DataType[] = [
-    {
-      invoices: "#GT-685458",
-      view: "$220",
-    },
     {
       invoices: "#GT-685458",
       view: "$220",
@@ -104,11 +100,11 @@ const PaymentInfo: React.FC = () => {
                     <p>Jerome Bell</p>
                   </div>
                   <div>
-                    <p style={{ marginLeft:'20px'}}>07/27</p>
+                    <p style={{ marginLeft:'15px'}}>07/27</p>
                     <img
                       style={{
-                        width: "70px",
-                        height: "40px",
+                        width: "60px",
+                        height: "35px",
                       }}
                       src="./assets/icon/cclogo.png"
                     ></img>
@@ -298,7 +294,7 @@ const PaymentInfo: React.FC = () => {
       </Col>
       <Col span={6}>
         <Table
-          style={{ marginTop: "20px" }}
+          style={{ marginTop: "20px"}}
           className="byecoincontent"
           columns={columns}
           pagination={false}

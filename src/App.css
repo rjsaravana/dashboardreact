@@ -89,7 +89,7 @@
   height: 33px;
 }
 
-.del-btn:hover{
+/* .del-btn:hover{
   color: #D70000 !important;
   background-color: #f8d6d6 !important;
 }
@@ -97,7 +97,7 @@
 .edit-btn:hover{
   color: #474747 !important;
   background-color: #cecccc !important;
-}
+} */
 
 .paid-btn{
   color: #ffffff;
@@ -128,4 +128,14 @@
   color: #3CAAC3;
   background: #e0f9f6;
   border-radius: 6px;
+}
+
+
+/*-----------------------------------------MenuItem----------------------------------------*/
+
+.menu-item>.ant-menu-item-selected{
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  margin-left: 13px;
+  background-color: #f5f5f5;
 }

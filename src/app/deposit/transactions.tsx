@@ -3,11 +3,11 @@ import React from "react";
 
 const Transactions: React.FC = () => {
 return(
-<div style={{marginTop:'90px'}}>
+<div style={{marginTop:'40px'}}>
     <h2>Your Transaction's</h2>
     <div className="pay-method">
         <p>NEWEST</p>
-        <p><CalendarOutlined /> 24-31 May 2023</p>
+        <p><CalendarOutlined /> <span style={{color:'#186A7E'}}> 24-31 May 2023 </span></p>
     </div>
 
     <div className="pay-method" style={{marginTop:'15px'}}>

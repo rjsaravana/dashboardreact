@@ -45,7 +45,6 @@ const BillingInfo: React.FC = () => {
             >
               <Button
                 className="del-btn"
-                type="primary"
                 style={{ marginTop: "20px" }}
               >
                 <DeleteOutlined /> Delete
@@ -56,7 +55,6 @@ const BillingInfo: React.FC = () => {
           <div>
             <Button
               className="edit-btn"
-              type="primary"
               style={{ marginTop: "20px" }}
             >
               <EditOutlined /> Edit
@@ -80,7 +78,6 @@ const BillingInfo: React.FC = () => {
             >
               <Button
                 className="del-btn"
-                type="primary"
                 style={{ marginTop: "20px" }}
               >
                 <DeleteOutlined /> Delete
@@ -91,7 +88,6 @@ const BillingInfo: React.FC = () => {
           <div>
             <Button
               className="edit-btn"
-              type="primary"
               style={{ marginTop: "20px" }}
             >
               <EditOutlined /> Edit
@@ -115,7 +111,6 @@ const BillingInfo: React.FC = () => {
             >
               <Button
                 className="del-btn"
-                type="primary"
                 style={{ marginTop: "20px" }}
               >
                 <DeleteOutlined /> Delete
@@ -125,7 +120,6 @@ const BillingInfo: React.FC = () => {
           <div>
             <Button
               className="edit-btn"
-              type="primary"
               style={{ marginTop: "20px" }}
             >
               <EditOutlined /> Edit

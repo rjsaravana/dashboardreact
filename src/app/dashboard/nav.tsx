@@ -1,8 +1,8 @@
-import React from 'react';
-import { AppstoreOutlined, LineChartOutlined, UserOutlined,LogoutOutlined, CaretLeftOutlined, SettingOutlined,ReconciliationOutlined } from '@ant-design/icons';
+import { AppstoreOutlined, LineChartOutlined, LogoutOutlined,DashboardOutlined, ReconciliationOutlined, SettingOutlined, UserOutlined } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
 import { Menu } from 'antd';
-import { useNavigate } from 'react-router-dom';
+import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 type MenuItem = Required<MenuProps>['items'][number];
 
@@ -37,6 +37,7 @@ const items: MenuProps['items'] = [
 
 ];
 
+
 const itemsPath:{[key:number]:string} ={
   1:"/dashboard",
   2:"/byte-coin",
@@ -54,11 +55,11 @@ export const MenuLayout: React.FC = () => {
   return (
     <Menu
       onClick={onClick}
+      className='menu-item'
       style={{ width: 230, height:'100%', marginTop:'62px', position:'fixed', zIndex:'10', background: '#1E7589', color:'#ffffff', fontWeight:'600' }}
-      defaultSelectedKeys={['1']}
+      defaultSelectedKeys={[]}
       defaultOpenKeys={['sub1']}
       mode="inline"
-      items={items}
-    />
+      items={items} />  
   );
 };

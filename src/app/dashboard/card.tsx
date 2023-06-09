@@ -188,11 +188,11 @@ const Cardcontent: React.FC = () => {
                 <p>Jerome Bell</p>
               </div>
               <div>
-                <p style={{ marginLeft: "20px" }}>07/27</p>
+                <p style={{ marginLeft: "15px" }}>07/27</p>
                 <img
                   style={{
-                    width: "70px",
-                    height: "40px",
+                    width: "60px",
+                    height: "35px",
                   }}
                   src="./assets/icon/cclogo.png"
                 ></img>
