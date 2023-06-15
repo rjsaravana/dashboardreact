@@ -7,7 +7,7 @@ const Cardcontent: React.FC = () => {
   return (
     <>
       <Row gutter={24} style={{ marginTop: "70px" }}>
-        <Col span={6}>
+        <Col lg={6} md={12} sm={24}>
           <Card bordered={false} hoverable>
             <div className="card-flex">
               <h2>
@@ -33,7 +33,7 @@ const Cardcontent: React.FC = () => {
             </div>
           </Card>
         </Col>
-        <Col span={6}>
+        <Col lg={6} md={12} sm={24}>
           <Card bordered={false} hoverable>
             <div className="card-flex">
               <h2>
@@ -56,7 +56,7 @@ const Cardcontent: React.FC = () => {
             </div>
           </Card>
         </Col>
-        <Col span={6}>
+        <Col lg={6} md={12} sm={24}>
           <Card bordered={false} hoverable>
             <div className="card-flex">
               <h2>
@@ -82,7 +82,7 @@ const Cardcontent: React.FC = () => {
             </div>
           </Card>
         </Col>
-        <Col span={6}>
+        <Col lg={6} md={12} sm={24}>
           <Card bordered={false} hoverable>
             <div className="card-flex">
               <h2>
@@ -116,7 +116,7 @@ const Cardcontent: React.FC = () => {
             style={{ width: "70%", marginTop: "20px", alignItems: "center" }}
           >
             <Row gutter={18}>
-              <Col span={6} className="card-center">
+              <Col lg={6} md={12} sm={12} className="card-center">
                 <div>
                   <h4>Previouse payout</h4>
                   <h1 style={{ fontSize: "25px" }}>$258,300</h1>
@@ -125,7 +125,7 @@ const Cardcontent: React.FC = () => {
                   </p>
                 </div>
               </Col>
-              <Col span={6} className="card-center">
+              <Col lg={6} md={12} sm={12} className="card-center">
                 <div>
                   <h4>Mar 29,2023</h4>
                   <Tag
@@ -135,7 +135,7 @@ const Cardcontent: React.FC = () => {
                   </Tag>
                 </div>
               </Col>
-              <Col span={6} className="card-center">
+              <Col lg={6} md={12} sm={12} className="card-center">
                 <div>
                   <h4>Previouse payout</h4>
                   <h1 style={{ fontSize: "25px" }}>$258,300</h1>
@@ -144,7 +144,7 @@ const Cardcontent: React.FC = () => {
                   </p>
                 </div>
               </Col>
-              <Col span={6} className="card-center">
+              <Col lg={6} md={12} sm={12} className="card-center">
                 <div>
                   <h4>Mar 29,2023</h4>
                   <Tag
@@ -160,7 +160,7 @@ const Cardcontent: React.FC = () => {
               </Col>
             </Row>
           </Card>
-
+          
           <Card
             hoverable
             style={{
